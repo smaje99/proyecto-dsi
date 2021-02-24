@@ -8,4 +8,5 @@ Se emplearán las siguientes tecnologías:
 - [ ] Flask
 - [x] JavaScript
 - [x] React
+- [x] HTML
 - [x] CSS
