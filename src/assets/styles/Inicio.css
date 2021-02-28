@@ -1,4 +1,4 @@
-header {
+.inicio-header {
     height: 65vh;
     padding-top: 30px;
     display: flex;
@@ -7,26 +7,39 @@ header {
     align-items: center;
 }
 
-header img {
+.inicio-header img {
     width: 500px;
     padding-top: 10px;
 }
 
-span {
+.inicio-header span {
     animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.seros {
+.inicio-header .seros {
     font-weight: 400;
     font-size: 130px;
     letter-spacing: 0.045em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, .5);
 }
 
-.title {
+.inicio-header .title {
     font-size: 36px;
     letter-spacing: 0.005em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.inicio-footer {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.inicio-footer span {
+    font-size: 18px;
+    font-weight: 250;
+    letter-spacing: 0.025;
+    text-align: center;
+    padding: 20px;
 }
 
 @keyframes focus-in-expand-fwd {
