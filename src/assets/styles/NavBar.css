@@ -39,3 +39,7 @@
     flex: 1;
     margin-left: 20px;
 }
+
+.selected {
+    border-bottom: 2px solid black;
+}
