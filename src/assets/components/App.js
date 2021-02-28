@@ -8,15 +8,21 @@ import {
 import { Inicio } from './Inicio';
 import { About } from './About';
 import { Notas } from './Notas';
+import { NavBar } from './NavBar';
+
+import '../styles/App.css'
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={ Inicio } />
-        <Route path="/info" component={ About } />
-        <Route path="/notas" component={ Notas } />
-      </Switch>
+      <div className="container">
+        <NavBar />
+        <Switch>
+          <Route path="/" component={ Inicio } />
+          <Route path="/acerca" component={ About } />
+          <Route path="/notas" component={ Notas } />
+        </Switch>
+      </div>
     </Router>
   );
 }
