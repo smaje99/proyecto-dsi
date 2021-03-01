@@ -8,6 +8,19 @@ class Thematic(NamedTuple):
     description: str
 
 
-class Group(NamedTuple):
-    name: str
-    thematicList: ThematicList
+class Group:
+    def __init__(self, name):
+        self.__name = name
+        self.__thematic_list = []
+
+    @property
+    def name(self):
+        return self.__name
+
+    def add(self, thematic: Thematic):
+        self.__thematic_list.add(thematic)
+
+    def get_thematic(self):
+        iterator = self.__thematic_list.iterator()
+        while iterator.has_next():
+            yield iterator.next()

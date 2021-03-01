@@ -20,8 +20,11 @@ class ThematicIterator(Iterator):
 
 
 class ThematicList(List):
-    def __init__(self, thematic: typing.List[Thematic]):
-        self.list = thematic
+    def __init__(self):
+        self.list = []
+
+    def add(self, thematic: Thematic):
+        self.list.append(thematic)
 
     def iterator(self) -> ThematicIterator:
         return ThematicIterator(self)
