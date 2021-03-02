@@ -2,7 +2,7 @@ import typing
 
 from iterator.iterator import Iterator
 from iterator.aggregation import List
-from thematic_group import Thematic
+from thematic_group.data import Thematic
 
 
 class ThematicIterator(Iterator):
@@ -16,7 +16,7 @@ class ThematicIterator(Iterator):
         return thematic
 
     def has_next(self) -> bool:
-        return self.__position < len(self.__cards)
+        return self.__position < len(self.__list)
 
 
 class ThematicList(List):

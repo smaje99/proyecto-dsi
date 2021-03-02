@@ -37,9 +37,9 @@ def get_group(name: str):
         ))
 
     return jsonify([{
-        'name': thematic['name'],
-        'icon': thematic['icon'],
-        'description': thematic['description']
+        'name': thematic.name,
+        'icon': thematic.icon,
+        'description': thematic.description
     } for thematic in group.get_thematic()])
 
 

@@ -1,6 +1,5 @@
 from typing import NamedTuple
 
-from thematic_group.concrete import ThematicList
 
 class Thematic(NamedTuple):
     name: str
@@ -8,10 +7,13 @@ class Thematic(NamedTuple):
     description: str
 
 
+from thematic_group.concrete import ThematicList
+
+
 class Group:
     def __init__(self, name):
         self.__name = name
-        self.__thematic_list = []
+        self.__thematic_list = ThematicList()
 
     @property
     def name(self):
