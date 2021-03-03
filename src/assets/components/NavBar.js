@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
+import { Search } from './Search'
 
 import '../styles/NavBar.css'
 
@@ -41,7 +41,7 @@ export const NavBar = () => {
             </ul>
             <ul className="nav-menu-right">
                 <li>
-                    <FontAwesomeIcon className="nav-link" icon={ faSearch } />
+                    <Search className="nav-link" />
                 </li>
             </ul>
         </nav>
