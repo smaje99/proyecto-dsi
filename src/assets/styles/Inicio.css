@@ -31,7 +31,8 @@
 
 .inicio-footer {
     margin-top: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .inicio-footer span {
@@ -40,6 +41,8 @@
     letter-spacing: 0.025;
     text-align: center;
     padding: 20px;
+    color: rgb(122, 117, 117);
+    line-height: 24px;
 }
 
 @keyframes focus-in-expand-fwd {
@@ -54,4 +57,12 @@
       filter: blur(0);
       opacity: 1;
     }
-  }
+}
+
+
+.groups {
+    width: 80%;
+    margin: 165px auto;
+    padding: 50px;
+    display: block;
+}
