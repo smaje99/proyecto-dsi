@@ -1,0 +1,87 @@
+.card-content {
+    width: 210px;
+    height: 250px;
+    margin: auto;
+    perspective: 600px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 50px;
+    padding: 10px;
+    background: linear-gradient(225deg, #c0a0b0, #c3e1e2);
+    box-shadow: -20px 20px 60px #b5adc5,
+                20px -20px 60px #84769c;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+}
+
+.front img {
+    width: 100px;
+    height: 100px;
+    align-self: stretch;
+    margin-top: 35px;
+}
+
+.front span {
+    align-self: flex-end;
+    position: absolute;
+    margin-bottom: 50px;
+    font-size:30px;
+    letter-spacing: .005em;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+}
+
+.back p {
+    width: 80%;
+    align-self: flex-start;
+    margin: 25px auto 5px;
+    padding: 0px 10px;
+    text-align: left;
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.back button {
+    color: #e5eef0;
+    background-color: #0075f1;
+    border: none;
+    border-radius: 10px;
+    align-self: flex-end;
+    position: absolute;
+    margin-bottom: 30px;
+    padding: 8px 18px;
+    box-shadow: 0px 2px 20px #0065cf;
+    font-size: 18px;
+    letter-spacing: .005em;
+}
+
+.back button:hover {
+    box-shadow: 5px 5px 20px #0065cf,
+                -5px -5px 20px #0065cf;
+}
