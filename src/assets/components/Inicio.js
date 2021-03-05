@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll'
 
 import { Group } from './inicio/Group'
 
@@ -15,7 +16,7 @@ export const Inicio = () => {
                 </span>
             </header>
 
-            <div className="go">
+            <div className="go" onClick={ scroll.scrollToTop }>
                 <span className="arrow"></span>
             </div>
 
