@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import '../../styles/Card.css'
 
@@ -13,7 +14,12 @@ export const Card = (props) => {
                 </div>
                 <div className="side back">
                     <p>{ props.description }</p>
-                    <button>Ver más</button>
+                    <Link
+                        to={ props.path }
+                        className="btn"
+                    >
+                        Ver más
+                    </Link>
                 </div>
             </div>
         </div>

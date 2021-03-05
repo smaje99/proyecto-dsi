@@ -5,6 +5,7 @@ class Thematic(NamedTuple):
     name: str
     icon: str
     description: str
+    path: str
 
 
 from thematic_group.concrete import ThematicList

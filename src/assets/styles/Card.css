@@ -67,7 +67,8 @@
     line-height: 22px;
 }
 
-.back button {
+.back .btn {
+    text-decoration: none;
     color: #e5eef0;
     background-color: #0075f1;
     border: none;
@@ -82,7 +83,7 @@
     outline: none;
 }
 
-.back button:hover {
+.back .btn:hover {
     box-shadow: 5px 5px 20px #0065cf,
                 -5px -5px 20px #0065cf;
 }

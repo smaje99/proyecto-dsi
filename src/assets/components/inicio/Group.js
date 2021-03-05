@@ -4,8 +4,6 @@ import { Card } from './Card'
 
 import '../../styles/Group.css'
 
-const API = process.env.SEROS_APP_API
-
 export const Group = (props) => {
     const [group, setGroup] = useState([]);
 
@@ -26,6 +24,7 @@ export const Group = (props) => {
                         name={ thematic.name }
                         icon={ thematic.icon }
                         description={ thematic.description }
+                        path={ thematic.path }
                     />
                 )) }
             </div>

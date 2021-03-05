@@ -30,17 +30,9 @@ def get_group(name: str):
     group = Group(name)
 
     for thematic in data:
-        group.add(Thematic(
-            thematic['name'],
-            thematic['icon'],
-            thematic['description']
-        ))
+        group.add(Thematic(**thematic))
 
-    return jsonify([{
-        'name': thematic.name,
-        'icon': thematic.icon,
-        'description': thematic.description
-    } for thematic in group.get_thematic()])
+    return jsonify([thematic._asdict() for thematic in group.get_thematic()])
 
 
 if __name__ == '__main__':
