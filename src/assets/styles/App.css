@@ -1,0 +1,9 @@
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
+}
