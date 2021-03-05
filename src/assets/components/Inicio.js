@@ -15,6 +15,10 @@ export const Inicio = () => {
                 </span>
             </header>
 
+            <div className="go">
+                <span className="arrow"></span>
+            </div>
+
             <section className="groups">
                 <Group name="introduction" title="Introducción" />
                 <Group name="algorithms" title="Algoritmos" />

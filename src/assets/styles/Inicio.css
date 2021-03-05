@@ -59,10 +59,36 @@
     }
 }
 
-
 .groups {
     width: 80%;
     margin: 165px auto;
     padding: 50px;
     display: block;
+}
+
+.go {
+    background-color: #c0a0b0;
+    width: 45px;
+    height: 45px;
+    margin-left: 88%;
+    margin-top: 10vh;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.8));
+}
+
+.go:hover {
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.8));
+}
+
+.go .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: solid 5px;
+    border-right: solid 5px;
+    transform: rotate(315deg);
 }
