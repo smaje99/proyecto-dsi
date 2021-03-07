@@ -14,12 +14,14 @@ export const Card = (props) => {
                 </div>
                 <div className="side back">
                     <p>{ props.description }</p>
-                    <Link
-                        to={ props.path }
-                        className="btn"
-                    >
-                        Ver más
-                    </Link>
+                    { props.btn &&
+                        <Link
+                            to={ props.path }
+                            className="btn"
+                        >
+                            Ver más
+                        </Link>
+                    }
                 </div>
             </div>
         </div>

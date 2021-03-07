@@ -25,6 +25,7 @@ export const Group = (props) => {
                         icon={ thematic.icon }
                         description={ thematic.description }
                         path={ thematic.path }
+                        btn
                     />
                 )) }
             </div>
