@@ -1,29 +1,38 @@
 import React from 'react'
 
+import { Card } from './inicio/Card'
+
+import { version } from '../../info'
+
 import '../styles/About.css'
 
 
 export const About = () => {
     return (
-        <>
+        <div className="about">
             <header className="about-header">
                 <img src="img/seros.svg" alt="Logotipo SEROS" />
                 <span className="seros">SEROS</span>
                 <span className="title">
-                    Herramienta Pedagógica Educativa para Algoritmos y Estructuras de Datos
+                    Herramienta Pedagógica Educativa para<br />Algoritmos y Estructuras de Datos
                 </span>
+
+                <div className="about-info">
+                    <a href="https://github.com/smaje99/proyecto-dsi" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://github.com/smaje99/proyecto-dsi/wiki" target="_blank" rel="noreferrer">Manual</a>
+                    <span>Versión { version }</span>
+                </div>
             </header>
 
             <section className="about-description">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean rutrum volutpat sagittis. Mauris nec bibendum tellus.
                     Maecenas id nibh quis purus condimentum dignissim. Cras risus
                     elit, viverra ut elementum non, bibendum quis nulla. Praesent
                     quis ipsum augue. Fusce sodales, quam malesuada maximus
                     imperdiet, nulla arcu sodales dui, at suscipit est orci ut
                     ipsum. Nunc maximus euismod lorem non ornare. In hac habitasse
-                    platea dictumst. Duis id nisi augue.
+                    platea dictumst. Duis id nisi augue.<br /><br />
 
                     Phasellus semper, justo in hendrerit dapibus, arcu augue lacinia
                     ante, vel efficitur nisl libero non orci. Vivamus sed tristique
@@ -31,7 +40,7 @@ export const About = () => {
                     Suspendisse porttitor sodales augue, aliquam pulvinar eros
                     sollicitudin in. Cras ac massa sed quam rhoncus dictum. Integer
                     eget dolor elementum, laoreet leo in, ornare quam. Nam dolor diam,
-                    condimentum a facilisis ac, convallis eget ipsum.
+                    condimentum a facilisis ac, convallis eget ipsum.<br /><br />
 
                     Etiam pulvinar, sapien non sagittis bibendum, lacus orci mattis
                     metus, eget aliquet metus augue vitae nibh. Duis magna risus,
@@ -48,15 +57,18 @@ export const About = () => {
                 </p>
             </section>
 
-            <section className="staff">
-                {/* <!-- card staff section --> */ }
-            </section>
-
-            <footer>
-                <a href="https://github.com/smaje99/proyecto-dsi" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="https://github.com/smaje99/proyecto-dsi/wiki" target="_blank" rel="noreferrer">Manual</a>
-                <span>Version 0.2.0</span>
-            </footer>
-        </>
+            <side className="staff">
+                <Card
+                    name="Sergio Majé"
+                    icon="img/contri/smaje99.png"
+                    description="Analista, diseñador y programador."
+                />
+                <Card
+                    name="Jhonatan"
+                    icon="img/contri/jhonatan.png"
+                    description="Diseñador."
+                />
+            </side>
+        </div>
     )
 }
