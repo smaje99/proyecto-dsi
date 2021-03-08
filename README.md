@@ -20,3 +20,5 @@ Se emplearán las siguientes tecnologías y librerías:
 ---
 Se emplearán los siguientes patrones de diseño:
 - [x] Iterator
+- [x] Singleton
+- [x] Facade
