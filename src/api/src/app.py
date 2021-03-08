@@ -2,9 +2,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 from database import DataBase
-
-from thematic_group.data import Group
-from thematic_group.data import Thematic
+import facade
 
 
 app = Flask(__name__)
@@ -18,21 +16,15 @@ db.load_db()
 
 @app.route('/group/<name>', methods=['GET'])
 def get_group(name: str):
-    '''Obtiene un grupo temático de la base de datos.
+    '''Obtiene un grupo temático.
 
     Args:
         name (str): nombre del grupo temático
 
     Returns:
-        contenidos temáticos del grupo
+        contenidos de las temáticas del grupo
     '''
-    data = db.get_group(name)
-    group = Group(name)
-
-    for thematic in data:
-        group.add(Thematic(**thematic))
-
-    return jsonify([thematic._asdict() for thematic in group.get_thematic()])
+    return jsonify(facade.get_group(name))
 
 
 if __name__ == '__main__':
